@@ -114,7 +114,7 @@ class Stats:
         n_percentiles = 5
         self.perc = np.linspace(0.0, 100.0, n_percentiles)
 
-        self.whiten_params = util.io.load(os.path.join(get_root(), 'pilot_run_results'))
+        self.whiten_params = 0., 1., 1. #util.io.load(os.path.join(get_root(), 'pilot_run_results'))
 
     def calc(self, data, whiten=True):
 

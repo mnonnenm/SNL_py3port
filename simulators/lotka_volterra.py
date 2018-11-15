@@ -101,7 +101,7 @@ class Stats:
 
     def __init__(self):
 
-        self.means, self.stds = util.io.load(os.path.join(get_root(), 'pilot_run_results'))
+        self.means, self.stds = 0., 1. #util.io.load(os.path.join(get_root(), 'pilot_run_results'))
 
     def calc(self, data):
 
