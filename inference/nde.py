@@ -410,7 +410,7 @@ class SequentialNeuralLikelihood:
             else:
                 # MCMC sample posterior in every other round
                 logger.write('burning-in MCMC chain...\n')
-                sampler.gen(max(200 / thin, 1), logger=logger, rng=rng)  # burn in
+                sampler.gen(max(200 // thin, 1), logger=logger, rng=rng)  # burn in
                 logger.write('burning-in done...\n')
                 proposal = sampler
 
