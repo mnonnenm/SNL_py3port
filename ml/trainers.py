@@ -70,7 +70,7 @@ class SGD_Template:
         self.trn_loss = float('inf')
         self.idx_stream = ds.IndexSubSampler(self.n_trn_data, rng=np.random.RandomState(42))
 
-    def train(self, minibatch=None, tol=None, maxepochs=None, monitor_every=None, patience=None, logger=sys.stdout, show_progress=False, val_in_same_plot=True):
+    def train(self, minibatch=None, tol=0., maxepochs=None, monitor_every=None, patience=None, logger=sys.stdout, show_progress=False, val_in_same_plot=True):
         """
         Trains the model.
         :param minibatch: minibatch size
@@ -86,7 +86,7 @@ class SGD_Template:
 
         # parse input
         assert minibatch is None or util.math.isposint(minibatch), 'Minibatch size must be a positive integer or None.'
-        assert tol is None or tol > 0.0, 'Tolerance must be positive or None.'
+        assert tol >= 0.0, 'Tolerance must be non-negative.'
         assert maxepochs is None or maxepochs > 0.0, 'Maximum number of epochs must be positive or None.'
         assert monitor_every is None or monitor_every > 0.0, 'Monitoring frequency must be positive or None.'
         assert patience is None or util.math.isposint(patience), 'Patience must be a positive integer or None.'
