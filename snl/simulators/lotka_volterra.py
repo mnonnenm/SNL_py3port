@@ -2,11 +2,10 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-import pdfs
-import simulators
-import simulators.markov_jump_processes as mjp
-import util.io
-import util.plot
+import snl.pdfs as pdfs
+import snl.simulators as simulators
+import snl.simulators.markov_jump_processes as mjp
+import snl.util as util
 
 
 class Prior(pdfs.BoxUniform):

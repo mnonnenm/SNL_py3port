@@ -3,14 +3,14 @@ import numpy as np
 from scipy.misc import logsumexp
 from copy import deepcopy
 
-import ml.trainers as trainers
-import ml.models.mdns as mdns
-import ml.step_strategies as ss
-import ml.loss_functions as lf
+import snl.ml.trainers as trainers
+import snl.ml.models.mdns as mdns
+import snl.ml.step_strategies as ss
+import snl.ml.loss_functions as lf
 
-import pdfs
-import simulators
-import inference.mcmc as mcmc
+import snl.pdfs as pdfs
+import snl.simulators as simulators
+import snl.inference.mcmc as mcmc
 
 
 def learn_conditional_density(model, xs, ys, ws=None, regularizer=None, val_frac=0.05, step=ss.Adam(a=1.e-4), minibatch=100, patience=20, monitor_every=1, logger=sys.stdout, rng=np.random):

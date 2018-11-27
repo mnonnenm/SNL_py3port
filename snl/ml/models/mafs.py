@@ -4,11 +4,10 @@ import numpy as np
 import theano
 import theano.tensor as tt
 
-import ml.models.layers as layers
-import ml.models.mades as mades
+import snl.ml.models.layers as layers
+import snl.ml.models.mades as mades
 
-import util.misc
-import util.ml
+import snl.util as util
 
 dtype = theano.config.floatX
 

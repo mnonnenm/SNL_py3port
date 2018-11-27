@@ -2,11 +2,9 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-import simulators
-import pdfs
-import util.plot
-import util.io
-import util.math
+import snl.simulators as simulators
+import snl.pdfs as pdfs
+import snl.util as util
 
 
 class Prior(pdfs.Uniform):

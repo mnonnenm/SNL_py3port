@@ -5,10 +5,9 @@ import theano
 import theano.tensor as tt
 import matplotlib.pyplot as plt
 
-import ml.step_strategies as ss
-import ml.data_streams as ds
-import util.math
-import util.ml
+import snl.ml.step_strategies as ss
+import snl.ml.data_streams as ds
+import snl.util as util
 
 
 dtype = theano.config.floatX

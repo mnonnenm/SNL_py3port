@@ -1,7 +1,7 @@
 
 
 import numpy as np
-import util.math
+import snl.util as util
 
 
 class SimTooLongException(Exception):

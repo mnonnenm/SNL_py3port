@@ -6,13 +6,11 @@ import matplotlib.pyplot as plt
 import neuron
 from neuron import h
 
-import simulators
+import snl.simulators as simulators
 
-import pdfs
+import snl.pdfs as pdfs
 
-import util.io
-import util.math
-import util.plot
+import snl.util as util
 
 
 # create the neuron

@@ -7,12 +7,9 @@ import theano
 import theano.tensor as tt
 import matplotlib.pyplot as plt
 
-import ml.models.neural_nets as nn
-import pdfs
-import util.math
-import util.misc
-import util.plot
-import util.ml
+import snl.ml.models.neural_nets as nn
+import snl.pdfs as pdfs
+import snl.util as util
 
 dtype = theano.config.floatX
 

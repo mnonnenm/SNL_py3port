@@ -5,9 +5,9 @@ import scipy.stats
 import matplotlib.pyplot as plt
 from matplotlib.patches import Ellipse
 
-import util.math
+import snl.util as util
 
-from pdfs.gaussian import Gaussian
+from snl.pdfs.gaussian import Gaussian
 
 
 class MoG:

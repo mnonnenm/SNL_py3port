@@ -1,7 +1,6 @@
 import numpy as np
-import pdfs
-import util.misc
-import util.io
+import snl.pdfs as pdfs
+import snl.util as util
 
 
 def sim_data(gen_params, sim_model, n_samples=None, rng=np.random):

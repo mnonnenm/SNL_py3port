@@ -1,6 +1,6 @@
-from .gaussian import Gaussian, fit_gaussian
-from .mog import MoG, fit_mog
-from .uniform import Uniform, BoxUniform
+from snl.pdfs.gaussian import Gaussian, fit_gaussian
+from snl.pdfs.mog import MoG, fit_mog
+from snl.pdfs.uniform import Uniform, BoxUniform
 
 import numpy as np
 

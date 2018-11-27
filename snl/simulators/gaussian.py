@@ -2,10 +2,9 @@ import numpy as np
 import scipy.stats
 import matplotlib.pyplot as plt
 
-import simulators
-import pdfs
-import util.plot
-import util.misc
+import snl.simulators as simulators
+import snl.pdfs as pdfs
+import snl.util as util
 
 
 class Prior(pdfs.BoxUniform):

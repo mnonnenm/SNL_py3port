@@ -7,7 +7,7 @@ import sys
 import numpy as np
 import scipy.misc
 
-import util.math
+import snl.util as util
 
 
 def calc_dist(data_1, data_2):

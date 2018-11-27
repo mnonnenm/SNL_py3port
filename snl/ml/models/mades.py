@@ -6,9 +6,7 @@ import theano.tensor as tt
 import matplotlib.pyplot as plt
 from theano.sandbox.rng_mrg import MRG_RandomStreams as RandomStreams
 
-import util.misc
-import util.ml
-import util.math
+import snl.util as util
 
 dtype = theano.config.floatX
 
