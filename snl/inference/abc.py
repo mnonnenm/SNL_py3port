@@ -160,7 +160,7 @@ class SMC:
             all_log_ess.append(0.0)
             all_n_sims.append(n_sims)
 
-        logger.write('iter = {0}, eps = {1:.2}, ess = {2:.2%}, sims = {3}\n'.format(iter, eps, 1.0, n_sims))
+        logger.write('iter = {0}, eps = {1}, ess (%) = {2}, sims = {3}\n'.format(iter, eps, 1.0, n_sims))
 
         while eps > eps_last:
 
@@ -185,7 +185,7 @@ class SMC:
                 all_log_ess.append(log_ess)
                 all_n_sims.append(n_sims)
 
-            logger.write('iter = {0}, eps = {1:.2}, ess = {2:.2%}, sims = {3}\n'.format(iter, eps, np.exp(log_ess), n_sims))
+            logger.write('iter = {0}, eps = {1}, ess (%) = {2}, sims = {3}\n'.format(iter, eps, np.exp(log_ess), n_sims))
 
         if info:
             return all_ps, all_log_weights, all_eps, all_log_ess, all_n_sims
