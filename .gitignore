@@ -1,0 +1,21 @@
+# Compiled source "
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Folders # 
+###########
+
+snl.egg-info/
+snl/__pycache__/
+snl/inference/__pycache__/
+snl/ml/__pycache__/
+snl/ml/models/__pycache__/
+snl/pdfs/__pycache__/
+snl/simulators/__pycache__/
+snl/util/__pycache__/
+
